@@ -1,12 +1,4 @@
-// script for fixing aidungeons user input
-//say input: '\n> You say \"text\"\n' 
-//DO input: \n> You say hello to someone\n' or if the user uses quotations: '\n> You say \"hello to someone\"\n'
-//Story: raw with a newline: ' say hello to someone'
-
-
-// Functionalities:
-// Fixes the ortography of the quoted text adding a comma, uppercase and a final period when neccesary
-// replaces the default say input verb to more dynamic ones when using the input with > you say/says
+// Code to paste into input of aidungeon
 const modifier = (text) => {
     text = text.replace(/\bI says\b/gi, "I say"); // Fix for first person
   
