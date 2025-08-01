@@ -21,7 +21,7 @@ const modifier = (text) => {
         const isUniformInside = insidePuncts.every(p => p === lastChar);
       
         const verbMap = {
-          ".": () => (Math.random() < 0.7 ? "say" : "state"),
+          ".": () => (Math.random() < 0.7 ? "say" : "speak"),
           "?": () => (Math.random() < 0.7 ? "ask" : "inquire"),
           "!": () => "shout",
           ",": () => (Math.random() < 0.7 ? "begin" : "start"),
